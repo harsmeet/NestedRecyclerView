@@ -75,7 +75,6 @@ public class VerticalRecyclerViewAdapter extends
 //                Toast.makeText(mContext, current.getTitle(), Toast.LENGTH_SHORT).show();
 //            }
 //        });
-
     }
 
     @Override
@@ -86,13 +85,8 @@ public class VerticalRecyclerViewAdapter extends
     class VerticalRecyclerViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.tvTitle)
         TextView tvTitle;
-
         @BindView(R.id.rvHorizontal)
         RecyclerView rvHorizontal;
-
-//        @BindView(R.id.btnMore)
-//        Button btnMore;
-
         public VerticalRecyclerViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);

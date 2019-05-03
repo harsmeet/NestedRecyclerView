@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.rvVertical)
     RecyclerView rvVertical;
-
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
@@ -33,10 +32,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         toolbar.setTitle(R.string.app_name);
         setSupportActionBar(toolbar);
-
         rvVertical.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
         mAdapter = new VerticalRecyclerViewAdapter(this, mArrayList);
