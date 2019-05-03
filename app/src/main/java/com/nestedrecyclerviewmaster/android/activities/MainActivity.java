@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setDataOnVerticalRecyclerView() {
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 3; i++) {
 
             VerticalModel mVerticalModel = new VerticalModel();
 
@@ -55,13 +55,12 @@ public class MainActivity extends AppCompatActivity {
 
             ArrayList<HorizontalModel> arrayList = new ArrayList<>();
 
-            for (int j = 0; j <= 5; j++) {
+            for (int j = 0; j <= 3; j++) {
                 HorizontalModel mHorizontalModel = new HorizontalModel();
                 mHorizontalModel.setDescription("Description : " + j);
                 mHorizontalModel.setName("Name : " + j);
                 arrayList.add(mHorizontalModel);
             }
-
             mVerticalModel.setArrayList(arrayList);
 
             mArrayList.add(mVerticalModel);

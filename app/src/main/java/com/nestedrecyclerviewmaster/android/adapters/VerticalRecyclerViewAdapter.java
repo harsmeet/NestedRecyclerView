@@ -60,6 +60,9 @@ public class VerticalRecyclerViewAdapter extends
                 new HorizontalRecyclerViewAdapter(mContext, singleSectionItems);
 
         holder.rvHorizontal.setHasFixedSize(true);
+
+//       todo Change Postition LinearLayoutManager.Horizontal or Verticle .
+
         holder.rvHorizontal.setLayoutManager(new LinearLayoutManager(mContext,
                 LinearLayoutManager.VERTICAL, false));
         holder.rvHorizontal.setAdapter(itemListDataAdapter);
